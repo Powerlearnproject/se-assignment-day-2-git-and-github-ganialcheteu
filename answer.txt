@@ -1,0 +1,100 @@
+ANSWERS
+
+1. Version control allows continuous saving of different states of your files in your working directory.
+GitHub allows versioning of your work (your files) and hosting your project to make it accessible to everyone involved.
+The integrity of the project is maintained because it’s hosted on GitHub, so it can’t be lost and is always available to team members.
+
+2. To create a new repository on GitHub, you need to give it a name, choose whether it's public or private, and optionally add a README file.
+
+3. The README file describes the project: its name, purpose, license, what it does, and how someone can contribute to improve it.
+
+4.
+A public Git repository is accessible to everyone.
+A private Git repository is only accessible to invited collaborators.
+
+Public repo
+Advantage: Great for sharing code and open source projects.
+Disadvantage: Anyone can see it.
+
+Private repo
+Advantage: Protected and accessible only by invitation.
+Disadvantage: You must be invited to access it.
+
+
+5.
+For my first commit, I copied the remote repository URL, moved to my working directory with cd, then ran:
+
+git clone <remote_url>
+
+Next, I added my files to the staging area with:
+
+git add .
+
+Then I saved them locally with:
+
+git commit -m "first save"
+
+Finally, I pushed the changes to GitHub with:
+
+git push -u origin main
+
+Commits are snapshots—saves of our files at a specific point in the project.
+They help track progress because we can list them using git log to view all project saves.
+
+6.
+Git branches help maintain a good workflow and task distribution among developers.
+Each branch can represent a specific feature of the project.
+You create a branch with:
+
+git checkout -b branchName
+
+After your work is done, you push it to the remote branch with:
+
+git push origin branchName
+
+Then you merge it with:
+
+git merge branchName
+
+7.
+A Pull Request (PR) lets you propose changes from one branch to another.
+It’s used to review the code before merging.
+You open a PR on GitHub, discuss the changes, and if everything is okay, you merge it.
+
+8.
+A fork is a copy of a project on your GitHub account, while cloning is a copy of the project on your local machine.
+Forks are used when you don’t have write access to a repository.
+You can make changes on your fork and open a pull request to suggest modifications.
+
+9.
+Issues are used to report bugs, share ideas, or ask questions.
+Project boards help follow project progress and track tasks.
+These tools support collaboration by showing everyone what problems exist and what needs to be done.
+
+10.
+
+Best Practices:
+
+Make commits with clear, short messages.
+
+Save (commit) when your feature is working well.
+
+
+Problems encountered:
+
+Committing without pulling recent changes (git pull)
+
+Merging the wrong branch
+
+Not collaborating enough with the team
+
+
+Solutions:
+
+Make good commits
+
+Make sure the feature works before saving
+
+Communicate with the team
+
+Regularly open pull requests.
